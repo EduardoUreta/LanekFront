@@ -1,0 +1,99 @@
+/* General container styles */
+.login-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; 
+    min-height: 100vh;
+}
+  
+/* Flexbox para la alineación horizontal de los formularios */
+.row {
+    display: flex;
+    justify-content: center;
+    /* gap: 30px; */
+    align-items: center; /* Asegura que estén al mismo nivel */
+    /* flex-wrap: nowrap; */
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #4e4e4e;
+    text-align: center;
+}
+
+/* Estilos para los formularios de login y registro */
+.login-form-1, .login-form-2 {
+    padding: 30px;
+    background: linear-gradient(145deg, #f0f4f7, #d9e3ea);
+    border-radius: 15px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Estilos para los campos de entrada */
+.form-group input.form-control {
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.form-group input.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    background-color: #f7f7f7;
+}
+
+.form-group input.form-control::placeholder {
+    color: #a6a6a6;
+}
+
+/* Botón de Submit */
+.form-group .btnSubmit {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 6px 15px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.2);
+}
+
+.form-group .btnSubmit:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.form-group .btnSubmit:active {
+    background-color: #548500;
+    transform: translateY(2px);
+}
+
+/* Estilo para centrar el texto */
+.text-center {
+    text-align: center;
+}
+
+/* Ajuste de tamaños para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+.row {
+    /* flex-direction: column; Los formularios se apilarán verticalmente */
+    gap: 20px;
+}
+
+.login-form-1, .login-form-2 {
+    max-width: 100%;
+}
+}
