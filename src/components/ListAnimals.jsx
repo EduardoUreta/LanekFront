@@ -20,7 +20,7 @@ export const ListAnimals = () => {
 
   return (
     <>
-        <h1 className='text-center mt-4'>Lista de Animales</h1>
+        <h1 className='text-center mt-4' data-aos="fade-left">Lista de Animales</h1>
         <div className="row mt-4" data-aos="zoom-out-up">
             {
                 (animales.length != 0) ? 
@@ -36,11 +36,12 @@ export const ListAnimals = () => {
                                     className="card-img-top img-fluid img-thumbnail object-fit-cover" 
                                     alt={animal.animalFavorito} 
                                     style={{ height: "300px" }}
+                                    title={`Animal favorito: ${animal.animalFavorito} - Usuario: ${correoUsuario?.email}`}
                                 />
                                 <div className="card-body">
-                                    <h5 className="card-title text-center text-warning">
+                                    <h3 className="card-title text-center text-warning text-uppercase">
                                         {animal.animalFavorito}
-                                    </h5>
+                                    </h3>
                                     <h6 className='card-title text-center'>
                                         El animal favorito del <br/>usuario "{correoUsuario?.email   }"
                                     </h6>

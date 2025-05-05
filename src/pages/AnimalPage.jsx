@@ -8,7 +8,7 @@ export const AnimalPage = () => {
     const { user } = useAuthStore();
 
   return (
-    <div id="ContainerPrincipal" >
+    <div id="ContainerPrincipal">
         <div>
             <NavBar/>
         </div>

@@ -67,7 +67,7 @@ export const FormAnimal = () => {
             (
                 <form className="animal-form" data-aos="zoom-in">
                     <div className="form-group mb-2">
-                        <label>¿Cúal es tu animal favorito?</label>
+                        <label className="text-dark">¿Cúal es tu animal favorito?</label>
                         <input
                         type="email"
                         className="form-control"
@@ -79,7 +79,7 @@ export const FormAnimal = () => {
                     </div>
         
                     <div className="form-group mb-2">
-                    <label>Agrega su imagen: </label>
+                    <label className="text-dark">Agrega su imagen: </label>
                     <input
                         type="file"
                         className="form-control"
@@ -100,7 +100,7 @@ export const FormAnimal = () => {
             ) 
             : 
             (
-                <div className="card animal-form mt-2" data-aos="zoom-in">
+                <div className="card animal-form mt-2 animal-list" data-aos="zoom-in">
                     <div className="text-center">
                         <img 
                             src={`${VITE_URL}/${animalActivo.imagen_url}`} 
