@@ -32,7 +32,7 @@ export const ListAnimals = () => {
                         <div key={animal.id} className="col-sm-12 col-md-6 col-lg-6 mb-4">
                             <div className="card h-100 animal-list mx-auto">
                                 <img 
-                                    src={`${VITE_URL}/${animal.imagen_url}`} 
+                                    src={animal.imagen_url} 
                                     className="card-img-top img-fluid img-thumbnail object-fit-cover" 
                                     alt={animal.animalFavorito} 
                                     style={{ height: "300px" }}

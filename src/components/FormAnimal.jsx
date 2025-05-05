@@ -109,7 +109,7 @@ export const FormAnimal = () => {
                 <div className="card animal-form mt-2 animal-list" data-aos="zoom-in">
                     <div className="text-center">
                         <img 
-                            src={`${VITE_URL}/${animalActivo.imagen_url}`} 
+                            src={animalActivo.imagen_url} 
                             className="card-img-top img-fluid img-thumbnail w-50" 
                             alt={animalActivo.nombre} 
                         />
