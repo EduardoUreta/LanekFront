@@ -49,7 +49,7 @@ export const ListAnimals = () => {
                                 <div>
                                     <div className='d-flex justify-content-center'>
                                         <a
-                                            href={`${VITE_API_URL}/animales/descargar/${nombreArchivo}`}
+                                            href={animal.imagen_url}
                                             className="btn btn-success downloadButton"
                                             rel="noopener noreferrer"
                                         >
