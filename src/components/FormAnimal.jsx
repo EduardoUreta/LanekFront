@@ -63,9 +63,7 @@ export const FormAnimal = () => {
     };
 
     useEffect(() => {
-        if(animalActivo){
-            startLoadOneAnimal(user._id);
-        }
+        startLoadOneAnimal(user._id);
     }, []);
 
   return (
