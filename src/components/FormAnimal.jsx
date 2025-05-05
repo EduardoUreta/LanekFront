@@ -29,6 +29,12 @@ export const FormAnimal = () => {
             e.target.value = null;
             return;
         }
+        if (file.size > 5 * 1024 * 1024) { 
+            e.preventDefault(); 
+            Swal.fire("La imagen que cargaste es muy pesada", "Favor, volver a intentar", "error");
+            e.target.value = null;
+            return;
+        } 
         onInputChange({ target: { name: 'respuestaImagen', value: file } });
     };
     
@@ -57,7 +63,9 @@ export const FormAnimal = () => {
     };
 
     useEffect(() => {
-        startLoadOneAnimal(user._id);
+        if(animalActivo){
+            startLoadOneAnimal(user._id);
+        }
     }, []);
 
   return (
