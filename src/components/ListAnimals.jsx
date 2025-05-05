@@ -49,9 +49,10 @@ export const ListAnimals = () => {
                                 <div>
                                     <div className='d-flex justify-content-center'>
                                         <a
-                                            href={animal.imagen_url}
+                                            href={`${VITE_API_URL}/animales/descargar/${nombreArchivo}`}
                                             className="btn btn-success downloadButton"
                                             rel="noopener noreferrer"
+                                            download
                                         >
                                         <i className="fa-solid fa-file-arrow-down"></i> DESCARGAR IMAGEN
                                         </a>
