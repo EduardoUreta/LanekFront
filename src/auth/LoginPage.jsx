@@ -67,6 +67,7 @@ export const LoginPage = () => {
                   name='loginPassword'
                   value={loginPassword}
                   onChange={onInputLoginChange}
+                  autoComplete="current-password"
                 />
               </div>
               <div className="form-group mb-2 text-center">
@@ -106,6 +107,7 @@ export const LoginPage = () => {
                   name='registerPassword'
                   value={registerPassword}
                   onChange={onInputRegisterChange}
+                  autoComplete="new-password"
                 />
               </div>
 
@@ -117,6 +119,7 @@ export const LoginPage = () => {
                   name='registerPasswordConfirmation'
                   value={registerPasswordConfirmation}
                   onChange={onInputRegisterChange}
+                  autoComplete="new-password"
                 />
               </div>
 

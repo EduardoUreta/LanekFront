@@ -27,7 +27,6 @@ export const ListAnimals = () => {
                 (
                     animales.map((animal) => {
                         const nombreArchivo = animal.imagen_url.replace('https://imglanek.s3.amazonaws.com/', '');
-                        console.log("Archivo que se va a descargar: ", nombreArchivo);
                         const correoUsuario = usuarios.find((usuario) => usuario.id == animal.UsuarioId);
                         return (
                         <div key={animal.id} className="col-sm-12 col-md-6 col-lg-6 mb-4">
@@ -66,7 +65,7 @@ export const ListAnimals = () => {
                 )
                 :
                 (
-                    <h3>Aún no hay usuarios registrados</h3>
+                    <h3>Aún no hay usuarios que hayan cargado su animal favorito</h3>
                 )
             }
 
