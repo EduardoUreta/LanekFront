@@ -26,7 +26,7 @@ export const ListAnimals = () => {
                 (animales.length != 0) ? 
                 (
                     animales.map((animal) => {
-                        const nombreArchivo = animal.imagen_url.replace('https://imglanek.s3.us-east-1.amazonaws.com/', '');
+                        const nombreArchivo = animal.imagen_url.replace(' https://imglanek.s3.amazonaws.com/', '');
                         const correoUsuario = usuarios.find((usuario) => usuario.id == animal.UsuarioId);
                         return (
                         <div key={animal.id} className="col-sm-12 col-md-6 col-lg-6 mb-4">
